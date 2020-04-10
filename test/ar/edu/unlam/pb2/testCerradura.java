@@ -7,21 +7,21 @@ import org.junit.Test;
 public class testCerradura {
 
 	@Test
-	public void testQueVerificaAperturaContraseñaCorrecta() {
+	public void testVerificaAperturaContraseñaCorrecta() {
 		Cerradura c1=new Cerradura(123);
 		c1.abrirCerradura(123);
 		assertTrue(c1.verEstado());
 	}
 	
 	@Test
-	public void testQueVerificaNoAperturaContraseñaIncorrecta() {
+	public void testVerificaNoAperturaContraseñaIncorrecta() {
 		Cerradura c1=new Cerradura(123);
 		c1.abrirCerradura(333);
 		assertFalse(c1.verEstado());
 	}
 	
 	@Test
-	public void testQueVerificaBloqueoIntentosFallidosConsecutivos() {
+	public void testVerificaBloqueoIntentosFallidosConsecutivos() {
 		Cerradura c1=new Cerradura(123);
 		
 		c1.abrirCerradura(333);
