@@ -33,7 +33,7 @@ public class testCerradura {
 	}
 	
 	@Test
-	public void testQueVerificaAperturaUltimoIntento() {
+	public void testVerificaAperturaUltimoIntento() {
 		Cerradura c2=new Cerradura(123);
 		
 		c2.abrirCerradura(122);
